@@ -110,7 +110,8 @@ h2 {
 }
 
 input,
-textarea {
+textarea,
+#dropdown {
     width: 300px;
     border: 1px solid oldlace;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

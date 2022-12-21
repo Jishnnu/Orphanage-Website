@@ -7,7 +7,7 @@ require("C:/xampp/htdocs/Orphanage/PHP/Database/Connect_DB.php");
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-// MYSQL QUERY TO INSERT VALUES INTO THE TABLE NAMED 'CONTACT'
+// MYSQL QUERY TO INSERT VALUES INTO THE TABLE NAMED 'USER'
 $select = "SELECT USERNAME, PASSWORD FROM USER WHERE USERNAME = '$username' AND PASSWORD = '$password'";
 
 // EXECUTING THE MYSQL QUERY
@@ -16,7 +16,7 @@ $result = mysqli_query($dbConn, $select) or
 
 $count = mysqli_num_rows($result); 
 
-// REDIRECT TO MAIN CONTACT PAGE
+// REDIRECT TO ADMIN PORTAL
 if ($count > 0) {    
     header("Location: /Orphanage/HTML/AdminPortal.html");
 }
