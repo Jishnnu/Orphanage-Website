@@ -14,11 +14,16 @@ $select = "SELECT USERNAME, PASSWORD FROM USER WHERE USERNAME = '$username' AND 
 $result = mysqli_query($dbConn, $select) or
     die("ERROR : UNABLE TO EXECUTE INSERT QUERY");
 
-$count = mysqli_num_rows($result); 
+$count = mysqli_num_rows($result);
 
 // REDIRECT TO ADMIN PORTAL
-if ($count > 0) {    
+if ($count == 1) {
     header("Location: /Orphanage/HTML/AdminPortal.html");
+} else {
+    echo "<script>
+            alert('Invalid Credentials');
+            window.location.href='/Orphanage/HTML/Admin.html';
+        </script>";
 }
 
 

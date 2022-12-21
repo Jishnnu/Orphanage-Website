@@ -11,8 +11,8 @@ $amount = $_POST["amount"];
 $mode = $_POST["payment_mode"];
 
 // MYSQL QUERY TO INSERT VALUES INTO THE TABLE NAMED 'DONATION'
-$transaction_id++;
-$insert = "INSERT INTO DONATION VALUES('$name', '$email', '$transaction_id', '$amount', '$mode')";
+$transaction_id += 1;
+$insert = "INSERT INTO DONATION (NAME, EMAIL, AMOUNT, MODE)VALUES('$name', '$email', '$amount', '$mode')";
 
 // EXECUTING THE MYSQL QUERY
 $result = mysqli_query($dbConn, $insert) or
