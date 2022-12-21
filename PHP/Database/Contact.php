@@ -16,8 +16,7 @@ $insert = "INSERT INTO CONTACT VALUES('$name', '$email', '$subject', '$descripti
 $result = mysqli_query($dbConn, $insert) or
     die("ERROR : UNABLE TO EXECUTE INSERT QUERY");
 
-// REDIRECT TO MAIN CONTACT PAGE
-
+// REDIRECT TO THANK YOU PAGE
 echo "<script>alert(\"Thank you. We will get back to you shortly.\")</script>";
 header("Location: /Orphanage/HTML/ThankYou.html");
 

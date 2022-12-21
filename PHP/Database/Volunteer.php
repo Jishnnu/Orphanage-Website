@@ -19,7 +19,7 @@ $insert = "INSERT INTO VOLUNTEER VALUES('$name', '$age', '$gender', '$phone', '$
 $result = mysqli_query($dbConn, $insert) or
     die("ERROR : UNABLE TO EXECUTE INSERT QUERY");
 
-// REDIRECT TO HOMEPAGE
+// REDIRECT TO THANK YOU PAGE
 header("Location: /Orphanage/HTML/ThankYou.html");
 
 ?>

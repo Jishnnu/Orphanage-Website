@@ -1,3 +1,4 @@
+// FOR IMAGE SLIDESHOW
 let index = 0;
 image_slideshow();
 
@@ -13,6 +14,7 @@ function image_slideshow() {
     setTimeout(image_slideshow, 6000);
 }
 
+// VERIFYING LOGIN
 function verify_login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -23,6 +25,7 @@ function verify_login() {
     return true;
 }
 
+// VERIFYING FEEDBACK
 function verify_contact() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -35,6 +38,7 @@ function verify_contact() {
     return true;
 }
 
+// VERIFYING VOLUNTEERS
 function verify_volunteer() {
     var regex_numeric = /^[0-9]+$/;
     var name = document.getElementById("name").value;
@@ -52,7 +56,7 @@ function verify_volunteer() {
     return true;
 }
 
-
+// VERIFYING DONATIONS
 function verify_payment() {
     var regex_numeric = /^[0-9]+$/;
     var name = document.getElementById("name").value;
@@ -66,6 +70,7 @@ function verify_payment() {
     return true;
 }
 
+// DISPLAYLING FEEDBACK STATUS
 function feedback_ajax() {
     var request = new XMLHttpRequest();
     request.open("GET", "/Orphanage/PHP/Database/DisplayAdminFeedback.php");
@@ -78,6 +83,7 @@ function feedback_ajax() {
     };
 }
 
+// DISPLAYLING VOLUNTEER STATUS
 function volunteer_ajax() {
     var request = new XMLHttpRequest();
     request.open("GET", "/Orphanage/PHP/Database/DisplayAdminVolunteer.php");
@@ -90,6 +96,7 @@ function volunteer_ajax() {
     };
 }
 
+// DISPLAYLING DONATION STATUS
 function donation_ajax() {
     var request = new XMLHttpRequest();
     request.open("GET", "/Orphanage/PHP/Database/DisplayAdminDonation.php");
@@ -100,8 +107,4 @@ function donation_ajax() {
             document.getElementById("ajax_div").innerHTML = request.responseText;
         }
     };
-}
-
-function back() {
-    window.location = "/Orphanage/HTML/Orphanage.html";
 }
