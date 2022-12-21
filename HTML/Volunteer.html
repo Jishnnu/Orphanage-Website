@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/Orphanage/CSS/Volunteer.css">
+    <title>Volunteer - Sunshine Orphanage</title>
+    <script src="/Orphanage//JavaScript/Verification.js"></script>
+</head>
+
+<body>
+    <br>
+    <ul>
+        <li class="title">S U N R I S E &ensp; <strong>O R P H A N A G E</strong></li>
+        <li><a id="admin" href="/Orphanage/HTML/Admin.html">ADMIN</a></li>
+        <li><a href="/Orphanage/HTML/Payment.html">DONATION</a></li>
+        <li class="active"><a href="/Orphanage/HTML/Volunteer.html">VOLUNTEER</a></li>
+        <li><a href="/Orphanage/HTML/Contact.html">CONTACT</a></li>
+        <li><a href="/Orphanage/HTML/About.html">ABOUT</a></li>
+        <li><a href="/Orphanage/HTML/Orphanage.html">HOME</a></li>
+    </ul>
+    <div id="outer_div">
+        <div id="inner_heading_div">
+            <h3>REGISTRATION FORM</h3>
+        </div>
+        <div id="inner_div">
+            <form method="post" action="/Orphanage/PHP/Database/Volunteer.php" onsubmit="return verify_volunteer()">
+                <small><b>Name</b></small><br>
+                <input id="name" class="textarea" type="text" name="name" placeholder="Enter your full name">
+                <br><br>
+                <small><b>Age</b></small><br>
+                <input id="age" class="textarea" type="number" class="gender" name="age"
+                    placeholder="Should be above 18">
+                <br><br>
+                <small><b>Gender</b></small>
+                <input type="radio" id="gender" name="gender" value="Male"><small> Male</small>
+                <input type="radio" id="gender" name="gender" value="Female"><small> Female</small><br>
+                <br><br>
+                <small><b>Email</b></small><br>
+                <input id="email" class="textarea" type="text" name="email" placeholder="Eg: someone@abc.com">
+                <br><br>
+                <small><b>Phone</b></small><br>
+                <input id="phone" class="textarea" type="text" name="phone" placeholder="Enter 10 digit phone number">
+                <br><br>
+                <small><b>Address</Address></b></small><br>
+                <input id="address" class="textarea" type="text" name="address"
+                    placeholder="Enter your present address">
+                <br><br>
+                <input type="submit" id="btn" value="REGISTER">
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <strong>&copy;</strong> Copyrights reserved to Sunshine Orphanage
+    </div>
+</body>
+
+</html>

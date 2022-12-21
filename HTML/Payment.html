@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/Orphanage/CSS/Payment.css">
+    <title>Donation - Sunshine Orphanage</title>
+    <script src="/Orphanage/JavaScript/Verification.js"></script>
+</head>
+
+<body>
+    <br>
+    <ul>
+        <li class="title">S U N R I S E &ensp; <strong>O R P H A N A G E</strong></li>
+        <li><a id="admin" href="/Orphanage/HTML/Admin.html">ADMIN</a></li>
+        <li class="active"><a href="/Orphanage/HTML/Payment.html">DONATION</a></li>
+        <li><a href="/Orphanage/HTML/Volunteer.html">VOLUNTEER</a></li>
+        <li><a href="/Orphanage/HTML/Contact.html">CONTACT</a></li>
+        <li><a href="/Orphanage/HTML/About.html">ABOUT</a></li>
+        <li><a href="/Orphanage/HTML/Orphanage.html">HOME</a></li>
+    </ul>
+    <div id="outer_div">
+        <div id="inner_heading_div">
+            <h3>DONATE</h3>
+        </div>
+        <div id="inner_div">
+            <form method="post" action="/Orphanage/PHP/Database/Donation.php" onsubmit="return verify_payment()">
+                <small><b>Name</b></small><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <br><br>
+                <small><b>Email</b></small><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email here">
+                <br><br>
+                <small><b>Amount</b></small><br>
+                <input type="text" id="amount" name="amount" placeholder="Enter the amount">
+                <br><br>
+                <input type="submit" id="btn" value="MAKE PAYMENT">
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <strong>&copy;</strong> Copyrights reserved to Sunshine Orphanage
+    </div>
+</body>
+
+</html>

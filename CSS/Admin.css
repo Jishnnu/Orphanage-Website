@@ -1,0 +1,173 @@
+body {
+    background-color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 40px;
+    overflow: auto;
+    line-height: 35px;
+    font-size: 13.5px;
+    background-size: cover;
+}
+
+ul li {
+    float: right;
+    border-right: 1px;
+    margin-bottom: 0;
+}
+
+a {
+    display: block;
+    padding: 0 30px;
+    color: #080808;
+    text-decoration: none;
+    margin: 0;
+}
+
+a:hover {
+    border-bottom: 2px solid #03a994;
+    color: #251e21;
+}
+
+.active a {
+    font-weight: bold;
+    color: #03a994;
+    margin-bottom: 0;
+}
+
+.title {
+    float: left;
+    color: #251e21;
+    font-size: x-large;
+    padding: 2px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+strong {
+    color: #03a994;
+}
+
+#admin {
+    color: #03a994;
+    border: 1px solid #03a994;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 5% 0 0 0;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+    float: left;
+    color: #03a994;
+    font-size: small;
+    margin: 3% 0 3% 0;
+}
+
+
+#outer_div {
+    box-shadow: 0 0 3px 0 black;
+    background-color: #ebedee;
+    border: 2px solid;
+    width: 600px;
+    border-color: #251e21;
+    margin: 5% 0 2% 26%;
+    border-radius: 8px;
+}
+
+#outer_div h3 {
+    text-align: center;
+}
+
+#inner_heading_div {
+    background-color: #251e21;
+    color: #03a994;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#inner_div {
+    padding-left: 15%;
+    padding-top: 35px;
+    width: 30%;
+    margin-left: 12%;
+}
+
+#btn {
+    background-color: #251e21;
+    color: #e0e0e0;
+    font-weight: bold;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 300px;
+    border: 1px solid oldlace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#operations {
+    margin: 0 -5px 0 15%;
+}
+
+#operations:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#card_holder {
+    margin: 5% 0 2% 0;
+    float: left;
+    width: 22%;
+    padding: 0 10px;
+}
+
+.card {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 18px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card:hover {
+    transition: ease-in 0.7s;
+    font-size: 110%;
+}
+
+th,
+tr {
+    padding: 12px;
+    border-style: solid;
+}
+
+td {
+    text-align: center;
+    padding: 6px;
+    border-style: solid;
+}
+
+table {
+    border: "3";
+    border-collapse: collapse;
+}
+
+#container {
+    margin-left: 30%;
+    width: 850px;
+    border-color: black;
+    border-radius: 12px;
+    margin-top: 1.5%;
+}

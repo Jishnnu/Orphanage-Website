@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/Orphanage/CSS/Contact.css">
+    <title>Contact - Sunshine Orphanage</title>
+    <script src="/Orphanage/JavaScript/Verification.js"></script>
+</head>
+
+<body>
+    <br>
+    <ul>
+        <li class="title">S U N R I S E &ensp; <strong>O R P H A N A G E</strong></li>
+        <li><a id="admin" href="/Orphanage/HTML/Admin.html">ADMIN</a></li>
+        <li><a href="/Orphanage/HTML/Payment.html">DONATION</a></li>
+        <li><a href="/Orphanage/HTML/Volunteer.html">VOLUNTEER</a></li>
+        <li class="active"><a href="/Orphanage/HTML/Contact.html">CONTACT</a></li>
+        <li><a href="/Orphanage/HTML/About.html">ABOUT</a></li>
+        <li><a href="/Orphanage/HTML/Orphanage.html">HOME</a></li>
+    </ul>
+
+    <div id="outer_div">
+        <div id="inner_heading_div">
+            <h3>CONTACT US</h3>
+        </div>
+        <div id="inner_div">
+            <form method="post" action="/Orphanage/PHP/Database/Contact.php" onsubmit="return verify_contact()">
+                <small><b>Name</b></small><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <br><br>
+                <small><b>Email</b></small><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email here">
+                <br><br>
+                <small><b>Subject</b></small><br>
+                <input type="text" id="subject" name="subject" placeholder="Why are you reaching us ?">
+                <br><br>
+                <small><b>Description</b></small><br>
+                <textarea name="description" id="msg" cols="20" rows="8" placeholder="Enter your feedback"></textarea>
+                <br><br>
+                <input id="btn" type="submit" value="SUBMIT">
+            </form>
+        </div>
+        <div id="footer">
+            <strong>&copy;</strong> Copyrights reserved to Sunshine Orphanage
+        </div>
+</body>
+
+</html>

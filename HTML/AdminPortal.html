@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/Orphanage/CSS/Admin.css">
+    <title>Admin Portal - Sunshine Orphanage</title>
+</head>
+<script src="/Orphanage/JavaScript/Verification.js"> </script>
+
+<body>
+    <br>
+    <ul>
+        <li class="title">S U N R I S E &ensp; <strong>O R P H A N A G E</strong></li>
+        <li class="active"><a id="admin" href="/Orphanage/HTML/Orphanage.html">LOGOUT</a></li>
+        <li><a href="/Orphanage/HTML/Payment.html">DONATION</a></li>
+        <li><a href="/Orphanage/HTML/Volunteer.html">VOLUNTEER</a></li>
+        <li><a href="/Orphanage/HTML/Contact.html">CONTACT</a></li>
+        <li><a href="/Orphanage/HTML/About.html">ABOUT</a></li>
+        <li><a href="/Orphanage/HTML/Orphanage.html">HOME</a></li>
+    </ul>
+    <h2>ADMIN PORTAL</h2>
+    <div id="operations">
+        <div id="card_holder" style="margin-left: 3.5%;">
+            <div class="card" onclick="feedback_ajax()"> 
+                <h3><strong>FEEDBACK & QUERIES</strong></h3>
+                <p>This will display all user feedback and queries</p>
+            </div>
+        </div>
+
+        <div id="card_holder">
+            <div class="card" onclick="volunteer_ajax()">
+                <h3><strong>VOLUNTEERS</strong></h3>
+                <p>This will display the details of all the volunteers</p>
+            </div>
+        </div>
+
+        <div id="card_holder">
+            <div class="card" onclick="donation_ajax()">
+                <h3><strong>DONATIONS</strong></h3>
+                <p>This will display all the donations provided by users</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ajax_div"></div>
+
+    <div id="footer">
+        <strong>&copy;</strong> Copyrights reserved to Sunshine Orphanage
+    </div>
+</body>
+
+</html>

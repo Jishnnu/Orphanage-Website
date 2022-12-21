@@ -1,0 +1,120 @@
+body {
+    background-color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 40px;
+    overflow: auto;
+    line-height: 35px;
+    font-size: 13.5px;
+    background-size: cover;
+}
+
+ul li {
+    float: right;
+    border-right: 1px;
+    margin-bottom: 0;
+}
+
+a {
+    display: block;
+    padding: 0 30px;
+    color: #080808;
+    text-decoration: none;
+    margin: 0;
+}
+
+a:hover {
+    border-bottom: 2px solid #03a994;
+    color: #251e21;
+}
+
+.active a {
+    font-weight: bold;
+    color: #03a994;
+    margin-bottom: 0;
+}
+
+.title {
+    float: left;
+    color: #251e21;
+    font-size: x-large;
+    padding: 2px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+strong {
+    color: #03a994;
+}
+
+#admin {
+    color: #03a994;
+    border: 1px solid #03a994;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 5% 0 0 0;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+    float: left;
+    color: #03a994;
+    font-size: small;
+    margin: 3% 0 3% 0;
+}
+
+ol {
+    float: left;
+    width: 45%;
+    margin: 2% 0 0 2%;
+}
+
+
+h2 {
+    text-align: left;
+    margin: 3% 0 2% 4%;
+}
+
+#img {
+    margin: 0 0 0 54%;
+}
+
+#img img {
+    width: 500px;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 12px;
+}
+
+#policies {
+    margin: 0 -5px;
+}
+
+#policies:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#card_holder {
+    float: left;
+    width: 22%;
+    padding: 0 10px;
+}
+
+.card {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
