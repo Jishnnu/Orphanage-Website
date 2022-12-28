@@ -12,7 +12,7 @@ $select = "SELECT USERNAME, PASSWORD FROM USER WHERE USERNAME = '$username' AND 
 
 // EXECUTING THE MYSQL QUERY
 $result = mysqli_query($dbConn, $select) or
-    die("ERROR : UNABLE TO EXECUTE INSERT QUERY");
+    die("ERROR : UNABLE TO EXECUTE INSERT QUERY"); 
 
 $count = mysqli_num_rows($result);
 
